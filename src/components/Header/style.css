@@ -1,0 +1,15 @@
+.custom-header {
+    background-color: #e2dc86;
+}
+
+.header {
+    display: inline-block;
+}
+
+.main-logo {
+    margin: 10px 5px
+}
+
+.text-green {
+    color: #5dcaaa
+}

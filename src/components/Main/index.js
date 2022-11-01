@@ -5,9 +5,8 @@ import galaxy from "../../assets/images/galaxy.jpg"
 
 function Main() {
     return (
-
-        <img src={galaxy} className="w-100 custom-image"/>
-
+        
+        <h1>Hello</h1>
     );
 }
 

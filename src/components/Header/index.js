@@ -3,11 +3,15 @@ import logo from "../../assets/images/logo.png";
 import Nav from "../Nav";
 import "./style.css";
 
-const data = {
-
-}
-
 function Header() {
+    const [sections] = useState([
+        {name: "About Me"},
+        {name: "Portfolio"},
+        {name: "Contact Me"},
+        {name: "My Resume"}
+      ])
+    
+      const [currentSection, setCurrentSection] = useState(sections[0])
     return (
         <header className="custom-header">
             <div>
@@ -16,7 +20,7 @@ function Header() {
                 <h1 className="header">easy<span className="text-green">Coder</span></h1>
                 </a>
             </div>
-            <Nav />
+            <Nav sections={sections} setCurrentSection={setCurrentSection} currentSection={currentSection}/>
         </header>
     );
 }

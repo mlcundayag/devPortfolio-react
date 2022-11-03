@@ -1,0 +1,7 @@
+.fa-github, .fa-paper-plane {
+    color: #e2dc86;
+}
+
+.fa-github:hover, .fa-paper-plane:hover {
+    color: #5dcaaa;
+}

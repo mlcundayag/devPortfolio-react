@@ -36,10 +36,10 @@ function Header() {
         <div>
             <header className="custom-header px-3">
                 <div>
-                    <a>
+                    <div>
                         <img className="py-2" src={logo} alt="logo" height="100" />
                         <h1 className="header">easy<span className="text-green">Coder</span></h1>
-                    </a>
+                    </div>
                 </div>
                 <Nav sections={sections} setCurrentSection={setCurrentSection} currentSection={currentSection} />
             </header>

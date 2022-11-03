@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Body";
-// import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -9,6 +9,9 @@ function App() {
       <header>
         <Header />
       </header>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }

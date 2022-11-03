@@ -11,7 +11,7 @@ function Resume() {
         <div className="container">
             <h1 className="pb-3">My Resume</h1>
             <p> Download resume <a href={resume} download><i className={iconDownload}></i></a></p>
-            <div className="py-2">
+            <div className="py-2 d-flex">
                 <img src={resumeScreenshot1} width="50%"/>
                 <img src={resumeScreenshot2} width="50%"/>
             </div>

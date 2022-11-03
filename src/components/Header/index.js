@@ -13,10 +13,10 @@ function Header() {
     
       const [currentSection, setCurrentSection] = useState(sections[0])
     return (
-        <header className="custom-header">
+        <header className="custom-header px-3">
             <div>
                 <a>
-                <img src={logo} alt="logo" height="100" />
+                <img className="py-2" src={logo} alt="logo" height="100" />
                 <h1 className="header">easy<span className="text-green">Coder</span></h1>
                 </a>
             </div>

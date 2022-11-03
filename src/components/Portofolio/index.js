@@ -64,7 +64,7 @@ function Portfolio() {
                     </div>
                 </div>
                 <div class="card bg-transparent border mx-2">
-                    <img class="card-img-top" src={passwordGenerator} alt="Card image cap" />
+                    <img class="card-img-top" src={passwordGenerator} alt="password generator" />
                     <div class="card-body">
                         <h5 class="card-title">Random Password generator</h5>
                         <p class="card-text">JS, CSS</p>
@@ -75,7 +75,7 @@ function Portfolio() {
                     </div>
                 </div>
                 <div class="card bg-transparent border mx-2">
-                    <img class="card-img-top" src={quiz} alt="Card image cap" />
+                    <img class="card-img-top" src={quiz} alt="Quiz for dummies" />
                     <div class="card-body">
                         <h5 class="card-title">Quiz for Dummies</h5>
                         <p class="card-text">JS, CSS</p>

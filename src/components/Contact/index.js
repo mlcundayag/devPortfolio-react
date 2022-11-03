@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./style.css";
 
 function Contact() {
     const [formState, setFormState] = useState({
@@ -45,25 +46,25 @@ function Contact() {
     return (
         <div className="container">
             <h1 className="pb-5">Contact Me</h1>
-            <form id="content-form" onSubmit={handleSubmit}>
+            <form className="form-group row" id="content-form" onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Name: </label>
-                    <input type="text" name="name" defaultValue={name}onBlur={handleChange}></input>
+                    <label className="custom-label col-sm-2 col-form-label" htmlFor="name">Name: </label>
+                    <input className="col-sm-4" placeholder="John Doe" type="text" name="Name" defaultValue={name}onBlur={handleChange}></input>
                 </div>
                 <div>
-                    <label htmlFor="email">Email address: </label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange}></input>
+                    <label className="custom-label col-sm-2 col-form-label" htmlFor="email">Email address: </label>
+                    <input className="col-sm-4" placeholder="name@email.com" type="email" name="email" defaultValue={email} onBlur={handleChange}></input>
                 </div>
                 <div>
-                    <label htmlFor="message">Message </label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                    <label className="custom-label col-sm-2 col-form-label" htmlFor="message">Message </label>
+                    <textarea className="col-sm-4" placeholder="Your message here" name="Message" rows="5" defaultValue={message} onBlur={handleChange} />
                 </div>
                 {displayMessage && (
                     <div>
-                        <p>{displayMessage}</p>
+                        <p className="mt-3 display-message">{displayMessage}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                <button className="col-sm-3 btn custom-button" type="submit">Submit</button>
             </form>
         </div>
     )

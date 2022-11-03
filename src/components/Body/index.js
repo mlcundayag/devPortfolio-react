@@ -44,7 +44,7 @@ function Header() {
                 <Nav sections={sections} setCurrentSection={setCurrentSection} currentSection={currentSection} />
             </header>
             <main>
-                <div>
+                <div className="jumbotron custom-page p-4 m-4">
                     {renderPage()}
                 </div>
             </main>
